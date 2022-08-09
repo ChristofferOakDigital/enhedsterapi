@@ -1,0 +1,73 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 7.5rem 0 17.5rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article p {
+  display: block;
+  margin: 0 0 5rem;
+  font-size: 3.6rem;
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+.article span {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 150%;
+  text-align: right;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.imageWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  padding-bottom: 150%;
+  background-image: url("../public/icons/formBefore.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-5%, -15%);
+
+  z-index: -1;
+}
+
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  padding-bottom: 150%;
+  background-color: var(--theme);
+  mask: url("../public/icons/maskAfter.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  z-index: -2;
+}
+
+.imageMask {
+  mask: url("../public/icons/mask.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+  }
+}

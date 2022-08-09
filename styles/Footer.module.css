@@ -1,0 +1,41 @@
+.wrapper {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  background-color: var(--brown);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 1.5rem;
+}
+
+.footer span {
+  font-size: 1.6rem;
+  color: var(--white);
+  line-height: 120%;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-bottom: 3rem;
+}
+
+.tag {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-heading);
+}
+
+.italic {
+  margin-top: 3rem;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .footer span {
+    font-size: 1.8rem;
+  }
+}

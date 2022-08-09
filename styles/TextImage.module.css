@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  padding: 7.5rem 0;
+  background-color: var(--sand);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.article > * {
+  color: var(--white);
+}
+
+.article h2 {
+  white-space: pre-line;
+}
+
+.article p {
+  margin-bottom: 5.5rem;
+}
+
+.imageWrappper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(250px, 100%, 600px);
+  margin: 0 auto;
+}
+
+.imageMask {
+  mask: url("../public/icons/mask.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
