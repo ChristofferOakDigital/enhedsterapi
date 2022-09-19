@@ -1,47 +1,47 @@
 @font-face {
-    font-family: 'Rufina';
-    src: url('/fonts/rufina-regular.woff2') format('woff2');
-    font-weight: 400;
+  font-family: "Rufina";
+  src: url("/fonts/rufina-regular.woff2") format("woff2");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Sarabun';
-    src: url('/fonts/sarabun-light.woff2') format('woff2');
-    font-weight: 300;
+  font-family: "Sarabun";
+  src: url("/fonts/sarabun-light.woff2") format("woff2");
+  font-weight: 300;
 }
 
 :root {
-    --theme: #ebe5de;
-    --text: #232321;
-    --sand: #ce9983;
-    --brown: #665050;
-    --black: #000000;
-    --white: #ffffff;
+  --theme: #ebe5de;
+  --text: #232321;
+  --sand: #ce9983;
+  --brown: #665050;
+  --black: #000000;
+  --white: #ffffff;
 
-    --font-heading: Rufina, sans;
-    --font-text: Sarabun, sans-serif;
+  --font-heading: Rufina, sans;
+  --font-text: Sarabun, sans-serif;
 
-    --sm: 640px;
-    --md: 768px;
-    --lg: 1024px;
-    --xl: 1280px;
-    --xxl: 1536px;
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --xxl: 1536px;
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: var(--font-text);
-    overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-text);
+  overflow-x: hidden;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -49,166 +49,171 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: var(--font-heading);
-    color: var(--text);
-    line-height: 120%;
-    font-weight: 400;
+  font-family: var(--font-heading);
+  color: var(--text);
+  line-height: 120%;
+  font-weight: 400;
 }
 
 h1 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 p,
 a,
 li {
-    font-size: 1.6rem;
-    color: var(--text);
-    line-height: 130%;
-    font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--text);
+  line-height: 130%;
+  font-weight: 300;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .section {
-    max-width: var(--xl);
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 section.theme {
-    background-color: var(--theme);
+  background-color: var(--theme);
+}
+
+section.white {
+  background-color: var(--white);
 }
 
 section.sand {
-    background-color: var(--sand);
+  background-color: var(--sand);
 }
 
 section.brown {
-    background-color: var(--brown);
+  background-color: var(--brown);
 }
 
 section.brown *,
 section.sand * {
-    color: var(--white);
+  color: var(--white);
 }
 
 .curve-wrapper svg {
-    display: flex;
-    height: auto;
-    width: 100%;
+  display: flex;
+  height: auto;
+  width: 100%;
 }
 
 .imageWrapper {
-    position: relative;
-    min-height: 200px;
-    width: 100%;
+  position: relative;
+  min-height: 200px;
+  width: 100%;
 }
 
 .imageWrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100vw;
-    transform: translateX(-20px);
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  transform: translateX(-20px);
+  object-fit: cover;
 }
 
 .button {
-    display: inline-block;
-    width: max-content;
-    max-width: 100%;
-    padding: 1.5rem 5rem;
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
-    line-height: 120%;
-    border-radius: 3px;
-    border: 1px solid var(--brown);
-    color: var(--brown);
-    transition: all 200ms ease-out;
-    cursor: pointer;
+  display: inline-block;
+  width: max-content;
+  max-width: 100%;
+  padding: 1.5rem 5rem;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  line-height: 120%;
+  border-radius: 3px;
+  border: 1px solid var(--brown);
+  color: var(--brown);
+  transition: all 200ms ease-out;
+  cursor: pointer;
 }
 
 .button:hover {
-    color: var(--white);
-    background-color: var(--brown);
+  color: var(--white);
+  background-color: var(--brown);
 }
 
 .buttonFull {
-    color: var(--white);
-    background-color: var(--brown);
+  color: var(--white);
+  background-color: var(--brown);
 }
 
 .buttonFull:hover {
-    color: var(--brown);
-    background-color: transparent;
+  color: var(--brown);
+  background-color: transparent;
 }
 
 @media (max-width: 767.99px) {
-    .imageWrapper.hideMobile {
-        min-height: 0;
-    }
+  .imageWrapper.hideMobile {
+    min-height: 0;
+  }
 
-    .imageWrapper.hideMobile img {
-        display: none !important;
-    }
+  .imageWrapper.hideMobile img {
+    display: none !important;
+  }
 }
 
 @media (min-width: 768px) {
-    h1 {
-        font-size: 5rem;
-    }
+  h1 {
+    font-size: 5rem;
+  }
 
-    h2 {
-        font-size: 3.6rem;
-    }
+  h2 {
+    font-size: 3.6rem;
+  }
 
-    p,
-    a,
-    li {
-        font-size: 1.8rem;
-    }
+  p,
+  a,
+  li {
+    font-size: 1.8rem;
+  }
 
-    .right {
-        order: 2;
-    }
+  .right {
+    order: 2;
+  }
 
-    .section {
-        padding: 0 50px;
-    }
+  .section {
+    padding: 0 50px;
+  }
 
-    .imageMask {
-        mask: url('/icons/mask.svg');
-        mask-size: contain;
-        mask-repeat: no-repeat;
-        mask-position: center;
-    }
+  .imageMask {
+    mask: url("/icons/mask.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
 
-    .imageWrapper {
-        min-height: 400px;
-        width: 100%;
-    }
+  .imageWrapper {
+    max-height: 500px;
+    min-height: 400px;
+    width: 100%;
+  }
 
-    .imageWrapper img {
-        width: 100%;
-        transform: translateX(0);
-    }
+  .imageWrapper img {
+    width: 100%;
+    transform: translateX(0);
+  }
 }
 
 main {
-    padding-top: 75px;
+  padding-top: 75px;
 }
 
 @media (min-width: 1024px) {
-    main {
-        padding-top: 100px;
-    }
+  main {
+    padding-top: 100px;
+  }
 }
