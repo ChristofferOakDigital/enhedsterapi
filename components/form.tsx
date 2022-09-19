@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/Form.module.css';
+// import styles from '../styles/Form.module.css';
 
 interface FormContent {
     title: string;
@@ -94,6 +94,94 @@ const Form = (content: FormContent) => {
                     </div>
                 </div>
             </div>
+
+            <style jsx>{`
+                .wrapper {
+                    width: 100%;
+                    padding: 7.5rem 0;
+                    background-color: var(--sand);
+                }
+
+                .container {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    gap: 3rem;
+                }
+
+                .article > * {
+                    color: var(--white);
+                }
+
+                .form {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1.8rem;
+                }
+
+                .form fieldset {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1.8rem;
+                    place-items: center;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                }
+
+                .form fieldset .label {
+                    position: relative;
+                    width: 100%;
+                }
+
+                .form fieldset input,
+                .form fieldset textarea {
+                    width: 100%;
+                    padding: 1.3rem 1.5rem;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 2rem;
+                    font-family: var(--font-text);
+                    font-weight: 300;
+                    line-height: 120%;
+                    background-color: var(--white);
+                }
+
+                .form fieldset label {
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 1.5rem;
+                    font-size: 2rem;
+                    font-family: var(--font-text);
+                    font-weight: 300;
+                    line-height: 120%;
+                    color: var(--brown);
+                    transition: all 150ms ease-out;
+                    pointer-events: none;
+                }
+
+                .form fieldset input:focus + label,
+                .form fieldset input:not(:placeholder-shown) + label,
+                .form fieldset textarea:focus + label,
+                .form fieldset textarea:not(:placeholder-shown) + label {
+                    top: 0.3rem;
+                    font-size: 1rem;
+                }
+
+                .form fieldset textarea {
+                    min-height: 120px;
+                    resize: none;
+                }
+
+                .wide {
+                    grid-column: span 2;
+                }
+
+                .imageMask {
+                    mask: url('../public/icons/mask.svg');
+                    mask-size: contain;
+                    mask-repeat: no-repeat;
+                }
+            `}</style>
         </section>
     );
 };
