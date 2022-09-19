@@ -8,15 +8,15 @@ import Quote from "../components/quote";
 const Home: NextPage = () => {
   const heroContent = {
     title:
-      "A healer is someone who holds space for you while you awaken your inner healer.",
+      "Enhedsterapi vækker menneskets ressourcer og selvhelbredende evner.",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium egestas porta consectetur arcu, ipsum at.",
     buttonMore: {
       text: "Læs mere",
-      url: "/treatment",
+      url: "/behandling",
     },
     buttonBook: {
       text: "Book tid",
-      url: "/contact",
+      url: "/kontakt",
     },
     image: {
       src: "/images/krystal.jpg",
