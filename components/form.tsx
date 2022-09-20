@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import CurveMedium from './curves/CurveMedium';
 // import Image from "next/image";
 // import styles from '../styles/Form.module.css';
@@ -14,6 +15,12 @@ interface FormContent {
 const Form = (content: FormContent) => {
     const { title, text, image } = content;
 
+    const [firstname, setFirstname] = useState('');
+    const [lastname, setLastname] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     const handleSubmit = async (e: any) => {
         e.preventDefault();
 
@@ -21,10 +28,11 @@ const Form = (content: FormContent) => {
 
         const res = await fetch('/api/sendgrid', {
             body: JSON.stringify({
-                email: 'christoffer.t.andersen@gmail.com',
-                fullname: 'Christoffer Andersen',
-                subject: 'En test mail',
-                message: 'Wow SendGrid virker faktisk',
+                email: email,
+                phone: phone,
+                name: `${firstname} ${lastname}`,
+                subject: 'Besked fra Enhedsterapeut.dk',
+                message: message,
             }),
             headers: {
                 'Content-Type': 'application/json',
@@ -59,6 +67,7 @@ const Form = (content: FormContent) => {
                     <article className="article">
                         <h1 className="title">{title}</h1>
                         <p>{text}</p>
+                        <p>Langesvej 34, stuen, 3400 Hillerød</p>
                         <a className="phone" href="tel:+4548242444">
                             +45 48 24 24 44
                         </a>
@@ -70,7 +79,11 @@ const Form = (content: FormContent) => {
                                         type="text"
                                         name="firstname"
                                         id="firstname"
+                                        value={firstname}
                                         placeholder=" "
+                                        onChange={(e) =>
+                                            setFirstname(e.target.value)
+                                        }
                                     />
                                     <label htmlFor="firstname">Fornavn</label>
                                 </div>
@@ -79,7 +92,11 @@ const Form = (content: FormContent) => {
                                         type="text"
                                         name="lastname"
                                         id="lastname"
+                                        value={lastname}
                                         placeholder=" "
+                                        onChange={(e) =>
+                                            setLastname(e.target.value)
+                                        }
                                     />
                                     <label htmlFor="lastname">Efternavn</label>
                                 </div>
@@ -90,7 +107,11 @@ const Form = (content: FormContent) => {
                                         type="tel"
                                         name="phone"
                                         id="phone"
+                                        value={phone}
                                         placeholder=" "
+                                        onChange={(e) =>
+                                            setPhone(e.target.value)
+                                        }
                                     />
                                     <label htmlFor="phone">Telefon</label>
                                 </div>
@@ -99,7 +120,11 @@ const Form = (content: FormContent) => {
                                         type="email"
                                         name="email"
                                         id="email"
+                                        value={email}
                                         placeholder=" "
+                                        onChange={(e) =>
+                                            setEmail(e.target.value)
+                                        }
                                     />
                                     <label htmlFor="email">Email</label>
                                 </div>
@@ -110,9 +135,15 @@ const Form = (content: FormContent) => {
                                         name="message"
                                         id="message"
                                         className="wide"
+                                        value={message}
                                         placeholder=" "
+                                        onChange={(e) =>
+                                            setMessage(e.target.value)
+                                        }
                                     ></textarea>
-                                    <label htmlFor="message">Besked</label>
+                                    <label htmlFor="message">
+                                        Besked (ingen personfølsomme data)
+                                    </label>
                                 </div>
                             </fieldset>
 
@@ -160,7 +191,7 @@ const Form = (content: FormContent) => {
 
                 .phone {
                     display: inline-block;
-                    margin-bottom: 8rem;
+                    margin-bottom: 5rem;
                     font-family: var(--font-heading);
                     font-size: 3.3rem;
                 }
@@ -203,6 +234,7 @@ const Form = (content: FormContent) => {
                     position: absolute;
                     top: 1.3rem;
                     left: 1.5rem;
+                    max-width: calc(100% - 3rem);
                     font-size: 2rem;
                     font-family: var(--font-text);
                     font-weight: 300;
