@@ -7,7 +7,7 @@ const Contact: NextPage = () => {
     title: "Kontakt & book tid",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium egestas porta consectetur arcu, ipsum at.",
     image: {
-      src: "/images/krystal.jpg",
+      src: "/images/lisbeth-jessen.jpg",
       alt: "Enhedsterapeut Lisbeth Jessen",
     },
   };

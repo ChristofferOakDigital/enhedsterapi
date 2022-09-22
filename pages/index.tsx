@@ -19,8 +19,8 @@ const Home: NextPage = () => {
       url: "/kontakt",
     },
     image: {
-      src: "/images/krystal.jpg",
-      alt: "En krystal på et bord",
+      src: "/images/blomsterhave.jpg",
+      alt: "Blomsterhave med et lyserødt træ",
     },
     bg: "theme",
   };
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
       url: "/klinik",
     },
     image: {
-      src: "/images/krystal.jpg",
+      src: "/images/lisbeth-jessen.jpg",
       alt: "Enhedsterapeut Lisbeth Jessen",
     },
     position: "right",
@@ -50,8 +50,8 @@ const Home: NextPage = () => {
       "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar turpis tristique amet, consectetur cursus.”",
     author: "// Klient eller citat person",
     image: {
-      src: "/images/krystal.jpg",
-      alt: "Hånd som holder en krystal",
+      src: "/images/solnedgang.jpg",
+      alt: "Solnedgang ved Arresø",
     },
   };
 
