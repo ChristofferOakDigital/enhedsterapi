@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Hero from "../components/hero";
 import TextImage from "../components/textImage";
+import FaqContainer from "../components/faq/FaqContainer";
+import FaqItem from "../components/faq/FaqItem";
 import FAQ from "../components/faq";
 
 const About: NextPage = () => {
@@ -54,7 +56,16 @@ const About: NextPage = () => {
       <Hero {...heroContent} />
       <TextImage {...textImageContentFirst} />
       <TextImage {...textImageContentSecond} />
-      <FAQ {...faqContent} />
+      <FaqContainer>
+        <FaqItem
+          question="Hvad er enhedsterapi?"
+          answer="Det ved min mor! :-)"
+        />
+        <FaqItem
+          question="Hvad kan en enhedsterapeut gøre for dig?"
+          answer="Det ved min mor også! :-)"
+        />
+      </FaqContainer>
     </>
   );
 };
