@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import { AnimatePresence, motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -31,6 +32,20 @@ function MyApp({ Component, pageProps }: AppProps) {
       </AnimatePresence>
 
       {router.pathname !== "/kontakt" && <Footer />}
+      <Toaster
+        toastOptions={{
+          success: {
+            style: {
+              fontSize: "16px",
+            },
+          },
+          error: {
+            style: {
+              fontSize: "16px",
+            },
+          },
+        }}
+      />
     </>
   );
 }

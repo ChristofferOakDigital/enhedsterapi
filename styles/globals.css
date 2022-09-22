@@ -28,6 +28,22 @@
   --xxl: 1536px;
 }
 
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 html {
   font-size: 10px;
 }
@@ -127,7 +143,8 @@ section.sand * {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   width: max-content;
   max-width: 100%;
   padding: 1.5rem 5rem;
