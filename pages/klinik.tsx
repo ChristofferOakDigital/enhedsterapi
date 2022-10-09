@@ -57,7 +57,10 @@ const About: NextPage = () => {
           answer="..."
         />
         <FaqItem question="Hvad er KiroJess?" answer="..." />
-        <FaqItem question="Hvor kan jeg parkere?" answer="..." />
+        <FaqItem
+          question="Hvor kan jeg parkere?"
+          answer="Der er mulighed for gratis parkering bagved klinikken"
+        />
       </FaqContainer>
     </>
   );

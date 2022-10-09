@@ -45,8 +45,7 @@ const Home: NextPage = () => {
   };
 
   const quoteContent = {
-    quote:
-      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar turpis tristique amet, consectetur cursus.”",
+    quote: '"Når der ikke er en vej ud, er der en vej igennem"',
     author: "// Klient eller citat person",
     image: {
       src: "/images/solnedgang.jpg",

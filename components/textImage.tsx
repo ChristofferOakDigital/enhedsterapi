@@ -92,7 +92,7 @@ const TextImage = (content: TextImageContent) => {
             {prices && (
               <div className="prices">
                 <div className="first">Førstegangsbesøg: 900 kr.</div>
-                <div className="return">Efterfølgende: 750 kr.</div>
+                <div className="return">Efterfølgende: fra 750 kr.</div>
               </div>
             )}
           </article>

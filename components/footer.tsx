@@ -32,7 +32,7 @@ const Footer = () => {
           Email: <a href="mailto:drlisbeth@yahoo.com">drlisbeth@yahoo.com</a>
         </span>
         <span className="italic">
-          Der er mulighed for gratis parkering ved klinikken
+          Der er mulighed for gratis parkering bagved klinikken
         </span>
       </div>
 
