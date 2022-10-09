@@ -23,16 +23,13 @@ const Footer = () => {
           </a>
         </Link>
 
-        <span className="tag">Kontakt KiroJess</span>
+        <span className="tag">Enhedsterapeut Lisbeth Jessen</span>
         <span>Adresse: Langesvej 34, stuen, 3400 Hillerød</span>
         <span>
           Telefon: <a href="tel:+4548242444">+45 48 24 24 44</a>
         </span>
         <span>
-          Email:{" "}
-          <a href="mailto:lisbeth.jessen@kirojess.dk">
-            lisbeth.jessen@kirojess.dk
-          </a>
+          Email: <a href="mailto:drlisbeth@yahoo.com">drlisbeth@yahoo.com</a>
         </span>
         <span className="italic">
           Der er mulighed for gratis parkering ved klinikken
