@@ -48,8 +48,8 @@ const Home: NextPage = () => {
     quote: '"Når der ikke er en vej ud, er der en vej igennem"',
     author: "// Klient eller citat person",
     image: {
-      src: "/images/solnedgang.jpg",
-      alt: "Solnedgang ved Arresø",
+      src: "/images/i-skoven.jpg",
+      alt: "Vandretur i skoven",
     },
   };
 
