@@ -7,9 +7,8 @@ import Quote from "../components/quote";
 
 const Home: NextPage = () => {
   const heroContent = {
-    title:
-      "Enhedsterapi vækker menneskets ressourcer og selvhelbredende evner.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium egestas porta consectetur arcu, ipsum at.",
+    title: "En vej til sundhed og personlig udvikling.",
+    text: "Et liv i bedre balance og flow.",
     buttonMore: {
       text: "Læs mere",
       url: "/behandling",
@@ -27,12 +26,12 @@ const Home: NextPage = () => {
 
   const paragraphContent = {
     title: "Hvad kan enhedsterapi gøre for dig?",
-    text: "At hjælpe det enkelte menneske, patient eller klient til at hjælpe sig selv i mange forskellige former for problemstillinger. Princippet er at styrke personlige evner, ressourcer og muligheder uanset funktionsniveauet, samt at arbejde ud fra den enkeltes kontekst med familie- og psykosocial baggrund. Ved samarbejde mellem behandler og klient at op fælles resonans og respons. Der er mange forskellige redskaber og nogle af dem er specielt effektive i forbindelse med stress, traumer, chok og fobier (jævnf.  Slavinski).",
+    text: 'Enhedsterapi har forskellige redskaber til at styrke dine ressourcer og kvaliteter, så du kan opnå livsmestring  i dit eget liv og dermed også i dine relationer.\n\nAt modtage enhver, der træder ind i nuet som et æret gæst. Når man tillader den enkelte person at være, som han eller hun er, begynder vedkommende at forandre og at udvikle sig. Der kan opstå en bedre balance og dermed en fornemmelse eller bevidsthed om "flow".',
   };
 
   const textImageContent = {
     title: "Enhedsterapeut\nLisbeth Jessen",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper.",
+    text: "- Jeg har matematisk/fysisk studentereksamen.\n- Jeg er uddannet som kiropraktor i Californien USA.\n- Jeg har været selvstændig siden 1990 og har derved en stor erfaring med at arbejde og hjælpe andre mennesker.\n- Jeg har altid prioriteret, at sætte mig grundigt ind i det indviduelle menneske og hvad der eventuelt kunne være af personlige  udfordringer, for bedst muligt at kunne hjælpe og støtte vedkommende.\n- Jeg blev uddannet som Enhedsterapeut i Danmark i 2015 ( Hold 1..kull 1, som det hedder i Norge) Uddannelsen er udviklet af den norske overlæge og forfatter Audun Myskia.\n- Jeg har gennem de sidste mange år taget mange kurser bl.a. også af mere spirituel karaktér som meditation, mindfulness, yoga (Jes Bertelsen, Jens Erik Risom, Jon Kabat Zin m.fl.",
     button: {
       text: "Læs mere",
       url: "/klinik",

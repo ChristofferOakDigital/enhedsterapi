@@ -4,26 +4,24 @@ import Hero from "../components/hero";
 import TextImage from "../components/textImage";
 import FaqContainer from "../components/faq/FaqContainer";
 import FaqItem from "../components/faq/FaqItem";
-import FAQ from "../components/faq";
 
 const About: NextPage = () => {
   const heroContent = {
-    title:
-      "“Et quote eller ordsprog din mor syntes giver mening til siden om hende og klinikken”",
+    title: '"Vend ansigtet mod solen, så vil skyggerne falde bag dig."',
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium egestas porta consectetur arcu, ipsum at.",
     image: {
-      src: "/images/krystal.jpg",
-      alt: "En krystal på et bord",
+      src: "/images/solskin.jpg",
+      alt: "En skål på et bord",
     },
     bg: "brown",
   };
 
   const textImageContentFirst = {
-    title: "Enhedsterapeut\nLisbeth Jessen",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper.",
+    title: 'Denne "mestringsmedicin"',
+    text: "Bygger på helse over tid, at styrke en naturlig helbredelse og fremme en økologisk bevidsthed. At opdage drivkraft og mening. At hjælpe sig selv med at påvirke det autonome nervesystem ved hjælp af træning, afspænding, ernæring, sansestimulation, evt. meditation, vejrtrækningsøvelser, træning f.eks yoga, de 5 Tibetanske riter,  kontakt med naturen..vandre, løbe, vinterbade,  sang, toning,  musik, dans...alt, der styrker vitalitet, glæde, dybde og livsmening.",
     image: {
-      src: "/images/krystal.jpg",
-      alt: "Enhedsterapeut Lisbeth Jessen",
+      src: "/images/i-skoven.jpg",
+      alt: "Vandring i skoven",
     },
     position: "left",
   };
@@ -32,17 +30,11 @@ const About: NextPage = () => {
     title: "Enhedsterapeut\nLisbeth Jessen",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper.",
     image: {
-      src: "/images/krystal.jpg",
-      alt: "Enhedsterapeut Lisbeth Jessen",
+      src: "/images/lisbeth-diplom.jpg",
+      alt: "Enhedsterapeut Lisbeth Jessen modtager diplom",
     },
     position: "right",
     bg: "theme",
-    validation: true,
-  };
-
-  const faqContent = {
-    question: "",
-    answer: "",
   };
 
   return (
@@ -59,11 +51,11 @@ const About: NextPage = () => {
       <FaqContainer>
         <FaqItem
           question="Hvad er enhedsterapi?"
-          answer="Det ved min mor! :-)"
+          answer="Enhedsterapi er at finde sin egen kraft og styrke."
         />
         <FaqItem
           question="Hvad kan en enhedsterapeut gøre for dig?"
-          answer="Det ved min mor også! :-)"
+          answer="Enhedsterapi kan hjælpe dig med, at helbrede dig selv og styrke din egen modstandskraft."
         />
       </FaqContainer>
     </>

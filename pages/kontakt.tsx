@@ -5,7 +5,7 @@ import Form from "../components/form";
 const Contact: NextPage = () => {
   const formContent = {
     title: "Kontakt & book tid",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium egestas porta consectetur arcu, ipsum at.",
+    text: "Jeg vil kontakte dig hurtigst muligt.",
     image: {
       src: "/images/lisbeth-jessen.jpg",
       alt: "Enhedsterapeut Lisbeth Jessen",
