@@ -87,7 +87,7 @@ const Hero = (content: HeroContent) => {
                     display: grid;
                     grid-template-columns: 1fr;
                     gap: 3rem;
-                    padding-bottom: 7rem;
+                    padding-bottom: 3rem;
                 }
 
                 .title {
@@ -119,6 +119,7 @@ const Hero = (content: HeroContent) => {
                     .hero {
                         grid-template-columns: 1fr 1fr;
                         padding-top: 7rem;
+                        padding-bottom: 7rem;
                     }
 
                     .imageWrapper {
