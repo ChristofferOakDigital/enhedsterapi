@@ -12,6 +12,7 @@ const Home: NextPage = () => {
                 "@context": "https://schema.org/",
                 "@type": "LocalBusiness",
                 "name": "Enhedsterapeut Lisbeth Jessen",
+                "telephone": "+4548242444",
                  "address": {
                    "@type": "PostalAddress",
                    "streetAddress": "Langesvej 34, stuen",
