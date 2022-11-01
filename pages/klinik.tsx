@@ -46,6 +46,10 @@ const About: NextPage = () => {
                     content="Jeg har altid prioriteret, at sætte mig grundigt ind i det indviduelle menneske og hvad der eventuelt kunne være af personlige udfordringer, for bedst muligt at kunne hjælpe og støtte vedkommende."
                 />
                 <link rel="icon" href="/favicon.ico" />
+                <link
+                    rel="canonical"
+                    href="https://www.enhedsterapeut.dk/klinik"
+                />
             </Head>
 
             <Hero {...heroContent} />

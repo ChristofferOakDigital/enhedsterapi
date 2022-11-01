@@ -6,6 +6,23 @@ import TextImage from '../components/textImage';
 import Quote from '../components/quote';
 
 const Home: NextPage = () => {
+    function addJsonLd() {
+        return {
+            __html: `{
+                "@context": "https://schema.org/",
+                "@type": "LocalBusiness",
+                "name": "Enhedsterapeut Lisbeth Jessen",
+                 "address": {
+                   "@type": "PostalAddress",
+                   "streetAddress": "Langesvej 34, stuen",
+                   "addressLocality": "Hillerød",
+                   "postalCode": "3400",
+                   "addressCountry": "DK"
+                 }
+              }`,
+        };
+    }
+
     const heroContent = {
         title: 'Enhedsterapi er en vej til sundhed og personlig udvikling.',
         text: 'Et liv i bedre balance og flow.',
@@ -37,7 +54,7 @@ const Home: NextPage = () => {
             url: '/klinik',
         },
         image: {
-            src: '/images/lisbeth-jessen.jpg',
+            src: '/images/enhedsterapeut-lisbeth-jessen.jpg',
             alt: 'Enhedsterapeut Lisbeth Jessen',
         },
         position: 'right',
@@ -62,6 +79,13 @@ const Home: NextPage = () => {
                     content="Enhedsterapi har forskellige redskaber til at styrke dine ressourcer og kvaliteter, så du kan opnå livsmestring i dit eget liv og dermed også i dine relationer."
                 />
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="canonical" href="https://www.enhedsterapeut.dk/" />
+
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={addJsonLd()}
+                    key="product-jsonld"
+                />
             </Head>
 
             <Hero {...heroContent} />
