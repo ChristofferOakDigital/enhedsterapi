@@ -7,7 +7,7 @@ const Contact: NextPage = () => {
         title: 'Kontakt & book tid',
         text: 'Jeg vil kontakte dig hurtigst muligt.',
         image: {
-            src: '/images/lisbeth-jessen.jpg',
+            src: '/images/enhedsterapeut-lisbeth-jessen.jpg',
             alt: 'Enhedsterapeut Lisbeth Jessen',
         },
     };

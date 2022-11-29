@@ -7,11 +7,15 @@ import FaqItem from '../components/faq/FaqItem';
 
 const Treatment: NextPage = () => {
     const heroContent = {
-        title: '“At hjælpe det enkelte menneske, til at hjælpe sig selv i mange forskellige former for problemstillinger.”',
-        text: '',
+        title: 'Få behandling hos Enhedsterapeut Lisbeth Jessen',
+        text: '“At hjælpe det enkelte menneske, til at hjælpe sig selv i mange forskellige former for problemstillinger.”',
         image: {
             src: '/images/strand.jpg',
             alt: 'Ved stranden',
+        },
+        buttonBook: {
+            text: 'Book tid',
+            url: '/kontakt',
         },
         bg: 'theme',
     };

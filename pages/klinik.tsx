@@ -7,8 +7,8 @@ import FaqItem from '../components/faq/FaqItem';
 
 const About: NextPage = () => {
     const heroContent = {
-        title: '"Vend ansigtet mod solen, så vil skyggerne falde bag dig."',
-        text: '',
+        title: 'Bygger på helse over tid, at styrke en naturlig helbredelse og fremme en økologisk bevidsthed.',
+        text: '"Vend ansigtet mod solen, så vil skyggerne falde bag dig."',
         image: {
             src: '/images/solskin.jpg',
             alt: 'En skål på et bord',
