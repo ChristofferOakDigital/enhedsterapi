@@ -82,8 +82,11 @@ const Form = (content: FormContent) => {
             <a className="phone" href="tel:+4548242444">
               +45 48 24 24 44
             </a>
+            <a className="email" href="mailto:drlisbeth@yahoo.com">
+              drlisbeth@yahoo.com
+            </a>
 
-            <form className="form" onSubmit={handleSubmit}>
+            {/* <form className="form" onSubmit={handleSubmit}>
               <fieldset>
                 <div className="label">
                   <input
@@ -159,7 +162,7 @@ const Form = (content: FormContent) => {
                   {loading && <Loader size="20px" border="thin" />}
                 </button>
               </fieldset>
-            </form>
+            </form> */}
           </article>
         </div>
       </div>
@@ -196,11 +199,16 @@ const Form = (content: FormContent) => {
           color: var(--white);
         }
 
-        .phone {
-          display: inline-block;
-          margin-bottom: 5rem;
+        .phone,
+        .email {
+          display: block;
+          margin-bottom: 2rem;
           font-family: var(--font-heading);
           font-size: 3.3rem;
+        }
+
+        .email {
+          margin-bottom: 5rem;
         }
 
         .form {
